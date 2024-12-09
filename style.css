@@ -72,7 +72,7 @@ button {
   }
 
   button {
-    width: 90%; /* Botões ocupam 90% da largura em telas pequenas */
+    width: 30%; /* Botões ocupam 90% da largura em telas pequenas */
     padding: 12px 15px; /* Ajuste do padding para telas pequenas */
   }
 
