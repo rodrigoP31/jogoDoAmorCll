@@ -1,82 +1,86 @@
 /* Estilos gerais */
-body {
-  background-image: url('img/logof.jpg'); /* Imagem de fundo */
-  background-size: cover;
-  background-position: center;
-  font-family: 'Comic Sans MS', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  flex-direction: column;
-  text-align: center;
-}
+    body {
+      background-image: url('img/logof.jpg'); /* Imagem de fundo */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Comic Sans MS', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
 
-h1 {
-  font-size: 32px; /* Tamanho de fonte maior */
-  color: #FF69B4;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
+    h1 {
+      font-size: 32px; /* Tamanho de fonte maior */
+      color: #FF69B4;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.botoes {
-  display: flex;
-  flex-direction: column; /* Coloca os botões em coluna para telas pequenas */
-  gap: 20px; /* Espaço entre os botões */
-}
+    .botoes {
+      display: flex;
+      flex-direction: column; /* Coloca os botões em coluna para telas pequenas */
+      gap: 20px; /* Espaço entre os botões */
+    }
 
-button {
-  padding: 20px 20px;
-  font-size: 20px; /* Tamanho de fonte dos botões */
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  width: 80%; /* Botões ocupam 80% da largura em telas pequenas */
-}
+    button {
+      padding: 15px 20px; /* Ajuste de padding */
+      font-size: 18px; /* Ajuste de tamanho da fonte */
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      width: 80%; /* Botões ocupam 80% da largura */
+      min-width: 200px; /* Define uma largura mínima */
+      max-width: 400px; /* Define uma largura máxima */
+      word-wrap: break-word; /* Quebra palavras longas */
+    }
 
-#sim {
-  background-color: #FF69B4;
-  color: white;
-}
+    #sim {
+      background-color: #FF69B4;
+      color: white;
+    }
 
-#sim:hover {
-  background-color: #FF1493;
-}
+    #sim:hover {
+      background-color: #FF1493;
+    }
 
-#nao {
-  background-color: #FF6347;
-  color: white;
-}
+    #nao {
+      background-color: #FF6347;
+      color: white;
+    }
 
-#nao:hover {
-  background-color: #FF4500;
-}
+    #nao:hover {
+      background-color: #FF4500;
+    }
 
-#mensagem {
-  margin-top: 20px;
-  font-size: 24px; /* Tamanho da fonte da mensagem */
-  color: #FF69B4;
-  display: none;
-  font-weight: bold;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-}
+    #mensagem {
+      margin-top: 20px;
+      font-size: 24px; /* Tamanho da fonte da mensagem */
+      color: #FF69B4;
+      display: none;
+      font-weight: bold;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    }
 
-/* Estilos responsivos */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 24px; /* Ajusta o tamanho da fonte em dispositivos menores */
-  }
+    /* Estilos responsivos */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte em dispositivos menores */
+      }
 
-  button {
-    width: 30%; /* Botões ocupam 90% da largura em telas pequenas */
-    padding: 12px 15px; /* Ajuste do padding para telas pequenas */
-  }
+      button {
+        width: 90%; /* Botões ocupam 90% da largura em telas pequenas */
+        padding: 12px 25px; /* Ajuste do padding para telas pequenas */
+        font-size: 16px; /* Diminui um pouco o tamanho da fonte */
+      }
 
-  #mensagem {
-    font-size: 18px; /* Tamanho de fonte menor para a mensagem */
-  }
-}
+      #mensagem {
+        font-size: 18px; /* Tamanho de fonte menor para a mensagem */
+      }
+    }
